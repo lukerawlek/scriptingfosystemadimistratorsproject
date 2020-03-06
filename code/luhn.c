@@ -6,7 +6,7 @@ int luhn(int cc[])
     int i, odd,even,computed, oddsum = 0,evensum=0, sum = 0;
     for (i = 0; i <16; i++) 
     {
-        int digit = cc[15-i];
+        int digit = cc[i];
         odd=digit;
         even = 2*digit;
         computed=even%10+even/10;
@@ -28,14 +28,26 @@ int luhn(int cc[])
 int main()
 {
     int number[16];
-    int * n;
-    printf("Enter credit card number: ");
-    scanf("%d",n);
-    for(int i=0;i<16;i++)
+   	int  n;
+    int mod;
+    printf("Enter credit card number 4 digits at a time: ");
+    for(int i=0;i<4;i++)
     {
-    	int mod=(int)(pow(10,i));
-    	number[i]=(*n % mod );
+        scanf("%d",&n);
+    	number[0+4*i]=(n/1000);
+    	number[1+4*i]=(n/100)-number[0+4*i]*10;
+    	number[2+4*i]=(n/10)-number[0+4*i]*100-number[1+4*i]*10;
+    	number[3+4*i]=n-number[0+4*i]*1000-number[1+4*i]*100-number[2+4*i]*10;
+    	
     }
-    printf("\n%s",  luhn(number) ? "ok" : "not ok");
+    int swp;
+   	for (int i=0;i<8;i++)
+ 		{
+ 		swp=number[i];
+ 		number[i]=number[15-i];
+ 		number[15-i]=swp;
+ 		}
+   	printf("\n%s",  luhn(number) ? "ok" : "not ok");
     return 0;
+ 	
  }
