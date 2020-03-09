@@ -1,0 +1,42 @@
+main
+	data
+	functions
+card
+
+	data
+		-card_number : int []
+		-first_name: char []
+		-last_name : char []
+		-ccv: int
+		-expiry_month: int
+		-expirey_year: int
+	functions
+		+card(): card
+		+card(int [],char [],char [], int, int , int):card
+		+card(char []):card
+		+setters:void
+		+getters:associated
+		+print():void
+		+toString():char []
+		+isValid(card):boolean
+		+isSame(card,card):boolean
+		
+cards
+	data
+		- current_size:int
+		- max_size
+		- cards: **list
+	
+	functions
+		+cards():cards
+		+cards(int):cards
+		+search(various):int
+		+contains(various):boolean
+		+add(card):void
+		~resize():void
+		+remove(card):void
+		+print():void
+		+toString():char []
+		+write_file(char []):void
+		+read_file(char []):cards
+		+isUnique(card):boolean		
