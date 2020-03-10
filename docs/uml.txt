@@ -1,5 +1,7 @@
 main
 	data
+		-usercard:card
+		-storedcards:cards
 	functions
 card
 
@@ -10,6 +12,7 @@ card
 		-ccv: int
 		-expiry_month: int
 		-expirey_year: int
+		-cardtype:int
 	functions
 		+card(): card
 		+card(int [],char [],char [], int, int , int):card
@@ -24,7 +27,7 @@ card
 cards
 	data
 		- current_size:int
-		- max_size
+		- max_size: int
 		- cards: **list
 	
 	functions
