@@ -1,0 +1,6 @@
+Resources:
+https://www.miltonmarketing.com/coding/coding-computer-viruses/coding-autorun-inf-script-virus/
+https://stackoverflow.com/questions/38786014/how-to-compile-executable-for-windows-with-gcc-with-linux-subsystem
+https://www.bleepingcomputer.com/forums/t/662699/disable-re-enable-mouse-via-command-prompt/
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7
+http://www.kaushikbaruah.com/posts/data-structure-in-c-hashmap/

@@ -1,0 +1,6 @@
+Activity						Projected Date
+(dd/mm)
+Finalization of research				28/02
+Finalization of Analysis, Algorithm, and Test Data	09/03
+Implementation(to be further divided after analysis)	31/03
+Presentation Work					07/04

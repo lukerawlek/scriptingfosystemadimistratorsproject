@@ -1,0 +1,11 @@
+Initial Scope
+	The intention of our software will be to simulate a ransomware attack based from a usb
+	The script will run from the usb and then lock the user from input.
+	The program will load a hash map of credit card conditions from a file
+It will prevent mouse input and accept command line input for the user to input a credit card number, exp, name, number
+	It will then check the credit card number against a preset list of conditions for validity
+		regex
+	If it is a false credit card number will prompt the user for reentry
+	If it is valid, it will store the cc number in a file
+		File will store date, etc
+	~WILL Potentially send to remote server
